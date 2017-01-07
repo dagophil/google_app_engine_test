@@ -14,7 +14,7 @@ This repository contains a hello world python example for the Google App Engine.
 
 ### Hello world
 A simple hello world python program (`main.py`) for the Google App Engine can look like this:
-```
+```python
 import webapp2
 
 
@@ -30,7 +30,7 @@ app = webapp2.WSGIApplication([
 ```
 
 The project needs a description file `app.yaml`, which can look like this:
-```
+```yaml
 runtime: python27
 api_version: 1
 threadsafe: true
@@ -51,7 +51,7 @@ The app can be uploaded to the Google Cloud Platform using `gcloud app deploy`.
 
 ### Test framework
 The app in `main.py` can be tested with a simple python program `main_test.py` that looks like this:
-```
+```python
 import webtest
 
 import main
